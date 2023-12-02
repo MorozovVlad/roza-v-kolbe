@@ -1,7 +1,6 @@
 <?php 
 $newPath = dirname(__DIR__);
-// require_once('phpmailer/PHPMailerAutoload.php');
-require_once('phpmailer/PHPMailerAutoload.php');
+require_once($newPath.'/phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
