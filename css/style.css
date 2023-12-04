@@ -1656,7 +1656,7 @@ p p {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 135px;
+    top: 45%;
     font-size: 30px !important;
     padding: 10px 20px 15px 20px !important;
 }
@@ -1668,7 +1668,7 @@ p p {
 }
 
 .reviews2_section .owl-prev, .reviews2_section .owl-next {
-    background-color: #f5ca16;
+    background-color: #d16ba5;
     padding: 10px;
 }
 
