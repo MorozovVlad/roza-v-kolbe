@@ -57,6 +57,21 @@
 // 		  ttq.load('CJ5SKHBC77UC1837SQ5G');
 // 		  ttq.page();
 // 		}(window, document, 'ttq');
+
+        function SendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "m.uladzislau.m@gmail.com",
+                Password : "CA8C3E0DC3A7D4E37940B0707BA78429D57C",
+                To : 'm.uladzislau.m@gmail.com',
+                From : "m.uladzislau.m@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+
 	</script>
 	
 </head>
@@ -528,7 +543,7 @@ color: white;
                     <input class="field" type="text" name="user_name" placeholder="Введите Ваше имя" required>
                     <input class="field" type="tel" name="user_phone" placeholder="Введите телефон с кодом" required>
                     <div class="btn_wrapper bg-edit" style="background-color: rgba(231, 12, 194, 0.3);" src="images/uploads/021005.jpg">
-                        <button class="button btn editContent" type="submit" style="background: linear-gradient(90deg, #d16ba5 0%, #d16ba5 50%, #d16ba5 100%);"> Оформить заказ</button>
+                        <button onclick="SendEmail()" class="button btn editContent" type="button" style="background: linear-gradient(90deg, #d16ba5 0%, #d16ba5 50%, #d16ba5 100%);"> Оформить заказ</button>
                     </div>
                 </form>
             </section>
