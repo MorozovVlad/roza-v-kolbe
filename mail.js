@@ -17,6 +17,6 @@ function SendEmail() {
       From: "ip.muhlyado.maxim@gmail.com",
       Subject: subject,
       Body: body,
-    }).then((message) => alert("Ваш заказ принят! Ожидайте звонка"));
+    }).then(() => alert("Ваш заказ принят! Ожидайте звонка"));
   }
 }
