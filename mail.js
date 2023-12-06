@@ -18,5 +18,7 @@ function SendEmail() {
       Subject: subject,
       Body: body,
     }).then(() => alert("Ваш заказ принят! Ожидайте звонка"));
+  } else {
+    alert("Введите ваше Имя и телефон");
   }
 }
