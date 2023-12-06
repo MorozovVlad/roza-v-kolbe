@@ -1,7 +1,7 @@
 function SendEmail() {
   let name = document.getElementById("name").value;
   let tel = document.getElementById("tel").value;
-  if (name && tel) {
+  if (length(name) > 0 && length(tel)) {
     let body =
       "Новая заявка на розу в колбе. <br/> Имя: " +
       name +
