@@ -60,16 +60,23 @@
 // 		}(window, document, 'ttq');
 
         function SendEmail(){
+
+            let name = document.getElementById("name").value
+            let tel = document.getElementById("tel").value
+
+            let body = "Новая заявка на розу в колбе. <br/> Имя: " + name + "<br/> Телефон: " + tel 
+            let subject = "Заявка на розу в колбе от " + name
+
             Email.send({
                 Host : "smtp.elasticemail.com",
                 Username : "ip.muhlyado.maxim@gmail.com",
                 Password : "96AC4554E4BAB70E1A17FE751910A6C39BA0",
                 To : 'ip.muhlyado.maxim@gmail.com',
                 From : "ip.muhlyado.maxim@gmail.com",
-                Subject : "Новый заказ на розу в колбе",
-                Body : "Пришел новый заказ на розу в колбе"
+                Subject : subject,
+                Body : body
             }).then(
-            message => alert(message)
+            message => alert("Ваш заказ принят! Ожидайте звонка")
             );
         }
 
@@ -541,8 +548,8 @@ color: white;
         <div class="content" style="background-color: #e7c1d6; padding-bottom: 20px;">
             <section class="offer_section offer3 order">
                 <form id="order_form" class="order_form" style="margin-top: 50px;" action="" method="POST">
-                    <input class="field" type="text" name="user_name" placeholder="Введите Ваше имя" required>
-                    <input class="field" type="tel" name="user_phone" placeholder="Введите телефон с кодом" required>
+                    <input class="field" id="name" type="text" name="user_name" placeholder="Введите Ваше имя" required>
+                    <input class="field" id="tel" type="tel" name="user_phone" placeholder="Введите телефон с кодом" required>
                     <div class="btn_wrapper bg-edit" style="background-color: rgba(231, 12, 194, 0.3);" src="images/uploads/021005.jpg">
                         <button onclick="SendEmail()" class="button btn editContent" type="button" style="background: linear-gradient(90deg, #d16ba5 0%, #d16ba5 50%, #d16ba5 100%);"> Оформить заказ</button>
                     </div>
