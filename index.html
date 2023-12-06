@@ -37,28 +37,16 @@
     <link rel="stylesheet" href="css/plugins/pickadate-default.css">
     <link rel="stylesheet" href="css/plugins/pickadate-default.date.css">
     
-    <!-- CUSTOM STYLESHEET -->
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/popup.css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
     <link rel="stylesheet" href="menu/menustyle.css">
     <link rel="stylesheet" href="menu/cookiestyle.css">
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
 	<script>
-// 		!function (w, d, t) {
-// 		  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
-// )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-		
-// 		  ttq.load('CJ5SKHBC77UC1837SQ5G');
-// 		  ttq.page();
-// 		}(window, document, 'ttq');
 
         function SendEmail(){
 
@@ -69,9 +57,7 @@
             let subject = "Заявка на розу в колбе от " + name
             console.log("+++")
             Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "ip.muhlyado.maxim@gmail.com",
-                Password : "96AC4554E4BAB70E1A17FE751910A6C39BA0",
+                SecureToken : "c8c6b1a2-1523-4d89-ab29-19cd1db5f708",
                 To : 'ip.muhlyado.maxim@gmail.com',
                 From : "ip.muhlyado.maxim@gmail.com",
                 Subject : subject,
