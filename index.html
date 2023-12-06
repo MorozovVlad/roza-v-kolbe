@@ -55,6 +55,11 @@
 
             let body = "Новая заявка на розу в колбе. <br/> Имя: " + name + "<br/> Телефон: " + tel 
             let subject = "Заявка на розу в колбе от " + name
+
+            if (name.trim() === '' || tel.trim() === '') {
+                alert('Пожалуйста, введите имя и телефон');
+            } else {
+
             console.log("+++")
             Email.send({
                 SecureToken : "c8c6b1a2-1523-4d89-ab29-19cd1db5f708",
@@ -64,7 +69,7 @@
                 Body : body
             }).then(
              alert("Ваш заказ принят! Ожидайте звонка")
-            );
+            )}
         }
 
 	</script>
