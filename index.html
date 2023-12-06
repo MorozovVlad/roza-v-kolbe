@@ -56,9 +56,6 @@
             let body = "Новая заявка на розу в колбе. <br/> Имя: " + name + "<br/> Телефон: " + tel 
             let subject = "Заявка на розу в колбе от " + name
 
-            if (name.trim() === '' || tel.trim() === '') {
-                alert('Пожалуйста, введите имя и телефон');
-            } else {
 
             console.log("+++")
             Email.send({
@@ -69,7 +66,8 @@
                 Body : body
             }).then(
              alert("Ваш заказ принят! Ожидайте звонка")
-            )}
+             
+            )
         }
 
 	</script>
