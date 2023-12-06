@@ -1,6 +1,7 @@
 function SendEmail() {
   let name = document.getElementById("name").value;
   let tel = document.getElementById("tel").value;
+
   let body =
     "Новая заявка на розу в колбе. <br/> Имя: " +
     name +
@@ -16,5 +17,5 @@ function SendEmail() {
     From: "ip.muhlyado.maxim@gmail.com",
     Subject: subject,
     Body: body,
-  }).then(() => alert("Ваш заказ принят! Ожидайте звонка"));
+  }).then((message) => alert("Ваш заказ принят! Ожидайте звонка"));
 }
