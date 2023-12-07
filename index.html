@@ -47,7 +47,16 @@
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
 	<script>
+        function check(){
+            let name = document.getElementById("name").value
+            let tel = document.getElementById("tel").value
+            if(name.trim() === '' || tel.trim() === ''){
+                alert("Введите имя и фамилию")
+            }else{
+                SendEmail()
+            }
 
+        }
         function SendEmail(){
 
             let name = document.getElementById("name").value
