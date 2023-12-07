@@ -48,11 +48,11 @@
     </script>
 	<script>
         function check1(){
-            let checkbox =  document.getElementById('myCheckbox').value;
+            // let checkbox =  document.getElementById('myCheckbox').value;
             let name = document.getElementById("name").value;
             let tel = document.getElementById("tel").value;
             console.log("+++++++++");
-            if(name.trim() === '' || tel.trim() === ''|| checkbox.checked){
+            if(name.trim() === '' || tel.trim() === ''){
                 alert("Введите имя и фамилию, а также дайте согласие на обработку персональных данных")
             }else{
                 SendEmail()
