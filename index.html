@@ -52,12 +52,8 @@
             let name = document.getElementById("name").value;
             let tel = document.getElementById("tel").value;
             console.log("+++++++++");
-            if( check.checked){
-                alert("+++")
-            }else{
-                alert("---")
-            }
-            if(name.trim() === '' || tel.trim() === ''){
+
+            if(name.trim() === '' || tel.trim() === '' || check.checked){
                 alert("Введите имя и фамилию, а также дайте согласие на обработку персональных данных")
             }else{
                 SendEmail()
