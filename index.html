@@ -52,7 +52,7 @@
             let name = document.getElementById("name").value;
             let tel = document.getElementById("tel").value;
             console.log("+++++++++");
-            if( check3.checked){
+            if( check.checked){
                 alert("+++")
             }else{
                 alert("---")
@@ -556,7 +556,7 @@ color: white;
                 <form id="order_form" class="order_form" style="margin-top: 50px;" action="" method="POST">
                     <input class="field" id="name" type="text" name="user_name" placeholder="Введите Ваше имя" required style="font-size:22px; padding-left: 20px;">
                     <input class="field" id="tel" type="tel" name="user_phone" placeholder="Введите телефон с кодом" required style="font-size:22px; padding-left: 20px;">
-                    <input id="check3" type="checkbox" checked  style="color: red;cursor: pointer;width: 15px; height: 15px; margin:10px 20px 0 20px;"><label for="check">Согласен на обработку персональных данных</label>
+                    <input id="check" type="checkbox" checked  style="color: red;cursor: pointer;width: 15px; height: 15px; margin:10px 20px 0 20px;"><label for="check">Согласен на обработку персональных данных</label>
                     <div class="btn_wrapper bg-edit" style="background-color: rgba(231, 12, 194, 0.3);" src="images/uploads/021005.jpg">
                         <button onclick="check1()" class="button btn editContent" type="button" style="cursor: pointer; background: linear-gradient(90deg, #d16ba5 0%, #d16ba5 50%, #d16ba5 100%);"> Оформить заказ</button>
                     </div>
